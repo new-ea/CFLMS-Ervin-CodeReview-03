@@ -3,39 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newspaper CF</title>
+    <title>insurance CF</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main_stylesheet.css">
+    <link rel="stylesheet" href="css/index_stylesheet.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header class="main_header">
-        <h1 class="header_logo">newspaper <span class="circle_logo">CF</span></h1>
+        <img src="img/logo.png" alt="">
             <div class="ref_box">
                 <a href="https://www.codefactory.wien "><img src="img/banner.png" alt="Ad CodeFactory"></a>
             </div>
     </header>
+
+    <!-- NAVBAR -->
     <nav class="main_nav">
         <ul class="nav_links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech</a></li>
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="video.html">Video</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
     </nav>
-    
+
+    <!-- FORM -->
+    <main>
+        <div class="header_box">
+            <h1>Car insurance</h1>
+        </div>
+        <form action="#">
+            <div class="form_header">
+                <h1>Great coverage begins with a custom quote</h1>
+            </div>
+            <section class="input_box">
+                <div class="inp_fields">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+
+                <div class="inp_fields">
+                    <label for="country">Country:</label>
+                    <div class="custom-select">
+                        <select name="country" id="country">
+                            <option value="">----------</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Greece">Greece</option>
+                        </select>
+                     </div>
+
+                    <label for="Horsepower">Horsepower of your car:</label>
+                    <input type="number" name="horsepower" id="horsepower">
+                </div>
+            </section>
+            <input type="button" class="btn" value="Calculate">
+            
+            <!-- OUTPUT BOX JS -->
+            <div class="output">
+                
+            </div>
+        </form>
+        <!-- FORM END -->
+
+        <article class="info_box">
+            <h2>Un-complicating car coverage</h2>
+            <p>Understanding your coverage options shouldn't be so hard</p>
+            <p>We'll guide you through available covergae types, starting with who and what is covered</p>
+        </article>
+    </main>
+    <article class="benefit_box">
+        <div class="box">
+            <h2>What comes standard</h2>
+            <p>The coverage you need</p>
+            <div class="check_box">
+                <p><span>&#10003;</span>Bodily Injury Liability</p>
+                <p><span>&#10003;</span>Property Damage</p>
+                <p><span>&#10003;</span>Medical Payments</p>
+            </div>
+                <p><b>Benefits</b></p>
+            <p>
+                12-months rate guarantee | 24/7 customer service | Lifetime Repair Guarantee
+            </p>   
+        </div>
+        <div class="box">
+            <h2>Add-on protection & coverage</h2>
+            <p>For more peace of mind</p>
+            <div class="check_box">
+                <p><span>&#10003;</span>Better Car Replacement</p>
+                <p><span>&#10003;</span>Towing & Labor</p>
+                <p><span>&#10003;</span>Rental Car Coverage</p>
+            </div>
+            <p><b>Benefits</b></p>
+            <p>
+                Accident Forgiveness | New Car Replacement
+            </p>
+        </div>
+    </article>
+
+    <!--FOOTER -->
     <footer class="main_footer">
         <ul class="footer_links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="tech.html">Tech</a></li>
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="video.html">Video</a></li>
+            <li><a href="team.html">Team</a></li>
         </ul>
             <div class="footer_logo">
-                <h1 class="header_logo">newspaper <span class="circle_logo">CF</span></h1>
+                <img src="img/logo-inv.png" alt="">
             </div>
             <div class="copyright">
                 <p>Ervin - CodeFactory 2020</p>
             </div>
     </footer>
+<script src="js/index.js"></script>
 </body>
 </html>

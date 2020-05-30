@@ -1,0 +1,57 @@
+.wrapper {
+    background-image: none;
+}
+
+.team_header {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.6em;
+}
+
+/* CARD ELEMENTS */
+.box_cards1,
+.box_cards2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.card_ma,
+.hidden {
+    width: 250px;
+    height: 300px;
+    box-shadow: 10px 10px 5px silver;
+    margin-bottom: 30px;
+}
+
+
+.img_ma {
+    height: 230px;
+}
+
+.img_ma > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info_ma {
+    height: 70px;
+    overflow: hidden;
+}
+
+.text_ma {
+    margin-top: 20px;
+}
+
+/* Hidden content for js event */
+.hidden {
+    display: none;
+    transition: transform .6s;
+}
+
+.hidden:hover {
+    transform: scale(1.07);
+}

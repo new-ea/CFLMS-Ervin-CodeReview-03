@@ -1,0 +1,39 @@
+/* MEDIA QUERIES MOBILE VERSION */
+@media screen and (max-width: 785px) {
+    /* HEADER */
+    .ref_box {
+        display: none;
+    }
+
+    .main_header > img {
+        margin: 0 auto;
+    }
+
+    /* MAIN CONTENT BOX */
+    main {
+        min-height: 1020px;
+    }
+
+    /* FORM */
+    .inp_fields {
+        width: 80%;
+       
+    }
+
+    /* BENEFIT BOXEN */
+    .benefit_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .team_header {
+        font-size: 1em;
+    }
+}
